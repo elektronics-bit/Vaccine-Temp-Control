@@ -92,7 +92,7 @@ if (tempC > 15) {
     peltierState = false;  // Turn OFF cooling
 }
 
-analogWrite(PELTIER_PIN, peltierState ? "ON" : "OFF");
+analogWrite(PELTIER_PIN, peltierState ? "255" : "0");
 ```
 
 ---
