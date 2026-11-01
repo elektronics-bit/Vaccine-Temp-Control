@@ -8,6 +8,8 @@ An embedded temperature control system that maintains stable vaccine storage con
 
 Vaccines require precise temperature control to remain effective. This project implements a real-time feedback control system using a DS18B20 temperature sensor and an ON/OFF control algorithm to switch a Peltier cooling module via MOSFET, maintaining temperature within the safe storage range of 10–15°C. A 16x2 I2C LCD displays live temperature and system status.
 
+> **Note on temperature range**: Standard vaccine cold-chain storage is 2-8°C. This prototype targets 10-15°C because reaching and stabilizing at 2-8°C with a single TEC1-12706 and limited insulation took too long within the project’s time and hardware constraints. The control logic is range-independent, so the thresholds can be changed to 2-8°C with better insulation, a larger heat sink, or a more capable cooling stage.
+
 ---
 
 ##  Components Used
